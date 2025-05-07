@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 
   const sectionCount = 9; // 총 9개 섹션 (footer 포함)
   let currentSection = 1; // section1부터 시작
