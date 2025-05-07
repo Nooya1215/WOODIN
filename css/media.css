@@ -1,0 +1,191 @@
+#media {
+  
+}
+
+#media .wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#media .wrap .media-info {
+  position: absolute;
+  right: 0;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 14.5%;
+  width: 20%;
+  height: calc(100% - 120px);
+  transform: translateY(20px);
+  border-radius: 8px 0 0 8px;
+  clip-path: inset(0 100% 0 0);
+}
+
+.infoani {
+  animation: infobg 1.2s forwards;
+}
+
+@keyframes infobg {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    animation-duration: 0.5;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+#media .wrap .media-info h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#media .wrap .media-info h3 {
+  font-size: 56px;
+  font-weight: 200;
+  margin: 40px 0 60px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+#media .wrap .media-info div {
+  position: relative;
+}
+
+#media .wrap .media-info .wrapper-text {
+  height: 50px;
+  overflow: hidden;
+}
+
+#media .wrap .media-info div p {
+  font-size: 23px;
+  font-weight: 300;
+  transform: translateY(50px);
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  display: none;
+  margin-top: 20px;
+}
+
+.active {
+  display: block !important;
+}
+
+#media .wrap .video-slide {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+#media .wrap .video-slide iframe {
+  border-radius: 5px;
+  margin-top: 50px;
+  position: relative;
+}
+
+#media .slick-list {
+  width: 1122px;
+  height: 631px;
+}
+
+#media .slick-track {
+  width: 1122px;
+  height: 631px;
+}
+
+#media .controls-wrapper {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+}
+
+#media .controls-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 364px;
+  width: 1px;
+  height: 20px;
+  margin-top: -10px;
+  background: #fff;
+  opacity: 0.4;
+}
+
+#media .controls-wrapper .slick-dots {
+  left: -15px;
+  bottom: -5px;
+  text-align: left;
+  display: flex !important;
+  justify-content: initial;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+/* 각 도트(바 형태) */
+.custom-dot {
+  width: 60px;
+  height: 2px;
+  background: #444;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 내부 게이지 바 */
+.dot-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #fff;
+}
+
+/* 애니메이션 클래스 */
+.dot-bar.animating {
+  animation: fillProgress linear forwards;
+  animation-duration: 4s; /* 슬라이드 전환 속도와 맞춤 */
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#media .controls-wrapper .slick-prev {
+  left: 315px;
+}
+
+#media .controls-wrapper .slick-next {
+  right: -30px;
+}
+
+#media .controls-wrapper .slick-prev, #media .controls-wrapper .slick-next {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+}
+
+#media .controls-wrapper .slick-prev::before {
+  
+}
+
+#media .controls-wrapper .slick-next::before {
+  transform: rotate(180deg);
+}
+
+#media .controls-wrapper .slick-prev::before, #media .controls-wrapper .slick-next::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/svg/product_arrow.svg);
+}

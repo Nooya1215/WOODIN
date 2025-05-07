@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/layout.css" type="text/css" />
+    <link rel="stylesheet" href="css/header.css" type="text/css" />
+    <link rel="stylesheet" href="css/title.css" type="text/css" />
+    <link rel="stylesheet" href="css/product.css" type="text/css" />
+    <link rel="stylesheet" href="css/category.css" type="text/css" />
+    <link rel="stylesheet" href="css/showroom.css" type="text/css" />
+    <link rel="stylesheet" href="css/gallery.css" type="text/css" />
+    <link rel="stylesheet" href="css/brand.css" type="text/css" />
+    <link rel="stylesheet" href="css/media.css" type="text/css" />
+    <link rel="stylesheet" href="css/instagram.css" type="text/css" />
+    <link rel="stylesheet" href="css/aside.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- slick -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="text/javascript"></script>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+
+    <!-- js -->
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/title.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/showroom.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/brand.js"></script>
+    <script src="js/media.js"></script>
+    <script src="js/instagram.js"></script>
+    <script src="js/aside.js"></script>
+    <script src="js/footer.js"></script>
+    <title>우딘</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrap flex">
+        <div class="logo">
+          <h1 class="h1">
+            <a href="#">
+              <img src="img/logo.png" alt="WOODIN Logo"/>
+            </a>
+          </h1>
+        </div>
+        <div class="header-menu flex">
+          <nav class="gnb">
+            <ul class="flex">
+              <li>
+                <a href="#" class="gnb-list">WOODIN</a>
+                <ul class="woodin-list">
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">브랜드</a></li>
+                      <li><a href="#">브랜드스토리</a></li>
+                      <li><a href="#">연혁 및 인증</a></li>
+                      <li><a href="#">CI & BI</a></li>
+                      <li><a href="#">오시는길</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">스토리</a></li>
+                      <li><a href="#">미디어</a></li>
+                      <li><a href="#">홍보</a></li>
+                      <li><a href="#">협찬</a></li>
+                      <li><a href="#">이벤트</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">갤러리</a></li>
+                      <li><a href="#">컬렉션</a></li>
+                      <li><a href="#">인테리어</a></li>
+                      <li><a href="#">익스테리어</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">쇼룸</a></li>
+                      <li><a href="#">전시장</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="gnb-list">PRODUCTS</a>
+                <ul class="products-list">
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">도어</a></li>
+                      <li><a href="#">시그니처 도어</a></li>
+                      <li><a href="#">트렌드 도어</a></li>
+                      <li><a href="#">ABS 도어</a></li>
+                      <li><a href="#">타공 도어</a></li>
+                      <li><a href="#">멤브레인 도어</a></li>
+                      <li><a href="#">키즈 도어</a></li>
+                      <li><a href="#">원목 도어</a></li>
+                      <li><a href="#">하드웨어</a></li>
+                      <li><a href="#">프레임</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">중문</a></li>
+                      <li><a href="#">양개 도어</a></li>
+                      <li><a href="#">피노 도어</a></li>
+                      <li><a href="#">글라스 도어</a></li>
+                      <li><a href="#">하드웨어</a></li>
+                      <li><a href="#">프레임</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">몰딩</a></li>
+                      <li><a href="#">페이퍼 몰딩</a></li>
+                      <li><a href="#">PS도장몰딩</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">시트</a></li>
+                      <li><a href="#">UV 페이퍼 시트</a></li>
+                      <li><a href="#">페이퍼 시트</a></li>
+                      <li><a href="#">인테리어필름</a></li>
+                      <li><a href="#">그 외 시트</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">보드</a></li>
+                      <li><a href="#">프리미엄 보드</a></li>
+                      <li><a href="#">힐링월 보드</a></li>
+                      <li><a href="#">원목 보드</a></li>
+                      <li><a href="#">입체 보드</a></li>
+                      <li><a href="#">기타 보드</a></li>
+                      <li><a href="#">욕실천장재</a></li>
+                      <li><a href="#">아트월</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">마루</a></li>
+                      <li><a href="#">내추럴 마루</a></li>
+                      <li><a href="#">콤비 강마루</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">창호</a></li>
+                      <li><a href="#">시스템 창호</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">목재</a></li>
+                      <li><a href="#">특수목</a></li>
+                      <li><a href="#">건축자재</a></li>
+                      <li><a href="#">프리컷</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="gnb-list">SUPPORT</a>
+                <ul class="support-list">
+                  <li>
+                    <ul class="sub-list">
+                      <li><a href="#">고객지원</a></li>
+                      <li><a href="#">카탈로그</a></li>
+                      <li><a href="#">자주묻는 질문</a></li>
+                      <li><a href="#">A/S접수</a></li>
+                      <li><a href="#">시공매뉴얼</a></li>
+                      <li><a href="#">대리점안내</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="enb">
+            <ul class="enb-list flex">
+              <li><a href="#" class="lang-btn">언어</a></li>
+              <li><a href="#" class="search-btn">검색</a></li>
+              <li><a href="#" class="menu-btn">메뉴</a></li>
+            </ul>
+            <ul class="enb-lang">
+              <li><a href="#" class="on">KOREAN</a></li>
+              <li><a href="#">ENGLISH</a></li>
+            </ul>
+            <div class="search-box">
+              <div class="flex-column-center">
+                <form class="search-bar">
+                  <input type="text" placeholder="Search" />
+                  <button type="button">검색</button>
+                </form>
+                <div class="keyword flex">
+                  <strong>인기검색어</strong> <span> | </span>
+                  <ul class="flex">
+                    <li><a href="#"># 뎁스</a></li>
+                    <li><a href="#"># 스텝</a></li>
+                    <li><a href="#"># 히든</a></li>
+                    <li><a href="#"># 제네로</a></li>
+                    <li><a href="#"># 시그니처</a></li>
+                    <li><a href="#"># 비지오그란데</a></li>
+                    <li><a href="#"># 웜그레이이</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="enb-menu">
+      <div class="menu1">
+        <div class="menu-logo">
+          <img src="img/menu_logo.png" alt="WOODIN Logo" />
+        </div>
+        <ul class="menu-list">
+          <li>
+            <a href="#">도어</a>
+            <ul class="menu-sub">
+              <li><a href="#">시그니처도어</a></li>
+              <li><a href="#">히든도어</a></li>
+              <li><a href="#">ABS도어</a></li>
+              <li><a href="#">타공도어</a></li>
+              <li><a href="#">멤브레인도어</a></li>
+              <li><a href="#">키즈도어</a></li>
+              <li><a href="#">원목도어</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">FINO DOOR</a>
+            <ul class="menu-sub">
+              <li><a href="#">제네로</a></li>
+              <li><a href="#">슬림스라이딩</a></li>
+              <li><a href="#">3연동</a></li>
+              <li><a href="#">파티션</a></li>
+              <li><a href="#">스윙폴딩</a></li>
+              <li><a href="#">폴딩딩</a></li>
+            </ul>
+          </li>
+          <li><a href="#">VISIOGRANDE</a></li>
+          <li><a href="#">TROCAL</a></li>
+        </ul>
+        <ul class="menu-sns">
+          <li><a href="#">유튜브</a></li>
+          <li><a href="#">인스타그램</a></li>
+          <li><a href="#">블로그</a></li>
+        </ul>
+      </div>
+      <div class="menu2">
+        <ul class="menu-list">
+          <li>
+            <h2>WOODIN</h2>
+            <ul>
+              <li><a href="#">브랜드</a></li>
+              <li><a href="#">스토리</a></li>
+              <li><a href="#">갤러리</a></li>
+              <li><a href="#">쇼룸</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="menu3">
+        <ul class="menu-list">
+          <li>
+            <h2>SUPPORT</h2>
+            <ul>
+              <li><a href="#">카달로그</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="#">A/S 접수</a></li>
+              <li><a href="#">시공매뉴얼</a></li>
+              <li><a href="#">대리점 문의</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="close">
+        <button type="button"></button>
+      </div>
+    </div>
+    <div id="title" class="section1">
+      <div class="wrap flex-column-center section">
+        <h2 class="h2">
+          CREATING HEALING SPACE IS <span class="block"></span>WOODIN HAUS’S TOP PRIORITY.
+        </h2>
+      </div>
+      <div class="container">
+        <div class="vertical-line"></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a class="bar" data-index="1"></a>
+      <a class="bar" data-index="2"></a>
+      <a class="bar" data-index="3"></a>
+      <a class="bar" data-index="4"></a>
+      <a class="bar" data-index="5"></a>
+      <a class="bar" data-index="6"></a>
+      <a class="bar" data-index="7"></a>
+      <a class="bar" data-index="8"></a>
+    </div>
+    <main>
+      <section id="product" class="section2">
+        <div class="wrap section">
+          <div class="product-info">
+            <h2 class="h2 animated-text">BEST PRODUCT</h2>
+            <h3 class="h3">
+              ECO-FRIENDLY AND <span class="block"></span>HIGH-QUALITY
+              <span class="block"></span>PRODUCTS
+            </h3>
+            <p class="p">
+              우딘 HAUS는 건강한 공간을 위한 <span class="block"></span>최선의 선택을 합니다.
+            </p>
+          </div>
+          <div class="product-imgs">
+            <ul class="product-slick">
+              <li class="img1">
+                <div class="product-text">
+                  <div>
+                    <strong>중문<span></span></strong>
+                    <p class="p">제네로 시리즈</p>
+                  </div>
+                </div>
+              </li>
+              <li class="img2">
+                <div class="product-text">
+                  <div>
+                    <strong>시스템창호<span></span></strong>
+                    <p class="p">독일 시스템창호</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="category" class="section3">
+        <div class="wrap flex-column-center section">
+          <ul class="product-info">
+            <li>
+              <a href="#">도어어</a>
+            </li>
+            <li class="category-text">
+              <h2 class="h2 animated-text">CATEGORY</h2>
+              <h3 class="h3">
+                DESIGN FOR HEALTH <span class="block"></span>AND WELL-BEING
+              </h3>
+              <p class="p">
+                우딘은 건강한 공간을 만든다는 일념으로 끊임없이 친환경 제품을 연구합니다.
+              </p>
+            </li>
+            <li>
+              <a href="#">중문</a>
+            </li>
+            <li>
+              <a href="#">시트</a>
+            </li>
+            <li>
+              <a href="#">파티션</a>
+            </li>
+            <li>
+              <a href="#">창호</a>
+            </li>
+            <li>
+              <a href="#">목재</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="showroom" class="section4">
+        <div class="wrap section">
+          <div class="showroom-info">
+            <h2 class="h2 animated-text">SHOWROOM</h2>
+            <h3 class="h3">WOODIN <span class="block"></span>SHOWROOM</h3>
+            <p class="p">우딘 전시장</p>
+            <address>인천 서구 복항로 122 (원창동) T. 032-583-0160</address>
+            <div>
+              <a href="#">VIEW MORE</a>
+            </div>
+          </div>
+          <ul class="showroom-slide">
+            <li class="img1"></li>
+            <li class="img2"></li>
+            <li class="img3"></li>
+          </ul>
+        </div>
+      </section>
+      <section id="gallery" class="section5">
+        <div class="wrap flex-column section">
+          <h2 class="h2 animated-text">GALLERY</h2>
+          <h3 class="h3">BEST QUALITY WELLNESS INTERIOR</h3>
+          <ul class="gallery-slide flex">
+            <li>
+              <a href="#">
+                <img src="img/gallery1.jpg" alt="제네로 시리즈 사진" />
+              </a>
+              <h4 class="h4">제네로 시리즈</h4>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/gallery2.jpg" alt="비지오그란데 사진"
+              /></a>
+              <h4 class="h4">비지오그란데</h4>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/gallery3.jpg" alt="타공 양개 도어 사진"
+              /></a>
+              <h4 class="h4">타공 양개 도어</h4>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/gallery4.jpg" alt="시그니처 도어 사진"
+              /></a>
+              <h4 class="h4">시그니처 도어</h4>
+            </li>
+            <li>
+              <a href="#"><img src="img/gallery5.jpg" alt="템바보드 사진" /></a>
+              <h4 class="h4">템바보드</h4>
+            </li>
+          </ul>
+          <div class="progress-container">
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+      </section>
+      <section id="brand" class="section6">
+        <div class="inner-bg section">
+          <div class="wrap flex-column-center">
+            <h2 class="h2 animated-text">BRAND</h2>
+            <h3 class="h3">BE GREEN, BE HEALING LIFE</h3>
+            <ul class="brand-info flex">
+              <li>
+                
+                <h4 class="h4">40년 목재 역사</h4>
+                <p class="p">
+                  Since 1982 <span class="block"></span>특수목 전문 기업
+                </p>
+              </li>
+              <li>
+                <h4 class="h4">친환경 자재 사용</h4>
+                <p class="p">
+                  자연과 가까운 <span class="block"></span>친환경 제품 사용
+                </p>
+              </li>
+              <li>
+                <h4 class="h4">고객 만족 제일주의</h4>
+                <p class="p">
+                  세계의 다양한 목재를 연구, <span class="block"></span>개발 합리적 가격의 제품을 생산
+                </p>
+              </li>
+              <li>
+                <h4 class="h4">감각적 디자인</h4>
+                <p class="p">
+                  다양한 디자인의 제품으로 <span class="block"></span>색다른 인테리어 연출
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="media" class="section7">
+        <div class="wrap section">
+          <div class="media-info">
+            <h2 class="h2 animated-text">MEDIA</h2>
+            <h3 class="h3">
+              HEALING HAUS <span class="block"></span>WOODIN HAUS
+            </h3>
+            <div>
+              <div class="controls-wrapper"></div>
+              <div class="wrapper-text">
+                <p class="p active">공간의 가치를 열다 | 30초</p>
+                <p class="p">Rethink DOOR 역사론편</p>
+                <p class="p">Rethink DOOR 생활론편</p>
+                <p class="p">Rethink DOOR 역할론편</p>
+                <p class="p">Rethink DOOR 가족편</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-slide">
+            <iframe class="video" src="https://www.youtube.com/embed/YxkW1R5TDpI" title="[우딘HAUS] 공간의 가치를 열다 | 30s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/KuKrgTYL7m8" title="[우딘 CF] Rethink DOOR 역사론편 30s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/83AW4kw4ARA" title="[우딘 CF] Rethink DOOR 생활론편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/oLLHNlDU_9w" title="[우딘 CF] Rethink DOOR 역할론편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/Fl7XRu-JmZw" title="[우딘 CF] Rethink DOOR 가족편" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="instagram" class="section8">
+        <div class="wrap flex-column-center section">
+          <h2 class="h2 animated-text">INSTAGRAM</h2>
+          <h3 class="h3">FOLLOW US ON INSTAGRAM</h3>
+          <ul class="insta-slide flex">
+            <li><a href="#" class="img1"></a></li>
+            <li><a href="#" class="img2"></a></li>
+            <li><a href="#" class="img3"></a></li>
+            <li><a href="#" class="img4"></a></li>
+            <li><a href="#" class="img5"></a></li>
+            <li><a href="#" class="img6"></a></li>
+            <li><a href="#" class="img7"></a></li>
+            <li><a href="#" class="img8"></a></li>
+            <li><a href="#" class="img9"></a></li>
+            <li><a href="#" class="img10"></a></li>
+            <li><a href="#" class="img11"></a></li>
+            <li><a href="#" class="img12"></a></li>
+            <li><a href="#" class="img13"></a></li>
+            <li><a href="#" class="img14"></a></li>
+            <li><a href="#" class="img15"></a></li>
+            <li><a href="#" class="img16"></a></li>
+            <li><a href="#" class="img17"></a></li>
+            <li><a href="#" class="img18"></a></li>
+            <li><a href="#" class="img19"></a></li>
+            <li><a href="#" class="img20"></a></li>
+            <li><a href="#" class="img21"></a></li>
+            <li><a href="#" class="img22"></a></li>
+            <li><a href="#" class="img23"></a></li>
+            <li><a href="#" class="img24"></a></li>
+            <li><a href="#" class="img25"></a></li>
+            <li><a href="#" class="img26"></a></li>
+            <li><a href="#" class="img27"></a></li>
+            <li><a href="#" class="img28"></a></li>
+            <li><a href="#" class="img29"></a></li>
+            <li><a href="#" class="img30"></a></li>
+            <li><a href="#" class="img31"></a></li>
+            <li><a href="#" class="img32"></a></li>
+            <li><a href="#" class="img33"></a></li>
+            <li><a href="#" class="img34"></a></li>
+            <li><a href="#" class="img35"></a></li>
+            <li><a href="#" class="img36"></a></li>
+            <li><a href="#" class="img37"></a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <aside id="aside">
+      <a href="#">TOP</a>
+    </aside>
+    <footer id="footer" class="section9">
+      <div class="wrap section">
+        <div class="footer-logo">
+          <h2 class="h2">
+            <img src="img/foot_logo.png" alt="WOODIN Logo" />
+          </h2>
+        </div>
+        <div class="footer-info section">
+          <address class="">
+            사업자등록번호 137.81.48926 | ADD 인천 서구 북항로 54 (원창동 381-118) <span class="block"></span>TEL 032-583-0160 | FAX 032-583-0161
+          </address>
+          <p class="p">COPYRIGHT Ⓒ 2022(주)우딘 RIGHTS RESERVED.</p>
+        </div>
+        <div class="footer-group">
+          <span>
+            <a href="#">개인정보보호정책</a>
+            <a href="#">이메일무단수집거부</a>
+          </span>
+          <ul class="flex">
+            <li>
+              <a href="#">유튜브</a>
+            </li>
+            <li>
+              <a href="#">인스타그램</a>
+            </li>
+            <li>
+              <a href="#">네이버 블로그</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
