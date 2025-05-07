@@ -1,0 +1,78 @@
+#title {
+  height: calc(100% - 80px);
+  /* height: 100vh; */
+}
+
+#title .wrap {
+  height: calc(100% - 35px);
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  animation: expandBg 1.2s forwards;
+}
+
+@keyframes expandBg {
+  0% {
+    clip-path: inset(0 50% 0 50%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+#title .wrap h2{
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 100;
+  width: 100%;
+}
+
+#title .container {
+  position: relative;
+  width: 1px;
+  height: 100px;
+  left: 50%;
+  bottom: 110px;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0; /* 처음에는 안 보이게 */
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 3s; /* 2.5초 후 실행 */
+}
+
+#title .vertical-line {
+  position: absolute;
+  width: 1px;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0; /* 초기 높이 0 */
+  animation: lineAnimation 1s infinite;
+  animation-delay: 3s; /* 2.5초 후 실행 */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lineAnimation {
+  0% {
+    height: 0%;
+    top: 0;
+  }
+  50% {
+    height: 100%;
+    top: 0;
+  }
+  100% {
+    height: 0%;
+    top: 100%;
+  }
+}

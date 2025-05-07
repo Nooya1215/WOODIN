@@ -1,0 +1,121 @@
+footer {
+  height: 190px;
+  background-color: #000;
+  color: #fff;
+}
+
+footer .wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .wrap .footer-logo {
+  height: 90%;
+  margin-right: 60px;
+  position: relative;
+}
+
+footer .wrap .footer-logo::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 110px;
+  background-color: #fff;
+  position: absolute;
+  right: -65px;
+  bottom: 25px;
+}
+
+footer .wrap .footer-logo h2 {
+  
+}
+
+footer .wrap .footer-logo h2 img {
+
+}
+
+footer .wrap .footer-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100px;
+  margin-left: 30px;
+}
+
+footer .wrap .footer-info address {
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+footer .wrap .footer-info p {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+footer .wrap .footer-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+footer .wrap .footer-group span {
+  display: flex;
+  gap: 20px;
+}
+
+footer .wrap .footer-group span a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+}
+
+footer .wrap .footer-group span a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  transition: 0.5s;
+  height: 1px;
+  background-color: #555;
+  left: 0;
+  bottom: 0;
+}
+
+footer .wrap .footer-group span a:hover::before {
+  width: 100%;
+}
+
+footer .wrap .footer-group ul {
+  gap: 20px;
+}
+
+footer .wrap .footer-group ul li {
+
+}
+
+footer .wrap .footer-group ul li a {
+  width: 38px;
+  height: 38px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+footer .wrap .footer-group ul li:nth-child(1) a {
+  background-image: url(../img/svg/sns1.svg);
+}
+
+footer .wrap .footer-group ul li:nth-child(2) a {
+  background-image: url(../img/svg/sns2.svg);
+}
+
+footer .wrap .footer-group ul li:nth-child(3) a {
+  background-image: url(../img/sns3.png);
+}
