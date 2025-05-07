@@ -134,6 +134,7 @@
 
 #category .product-info li:nth-child(4) a {
   background-image: url(../img/category3.jpg);
+  background-size: 100%;
 }
 
 #category .product-info li:nth-child(5) {
@@ -163,6 +164,7 @@
 
 #category .product-info li:nth-child(7) a {
   background-image: url(../img/category6.jpg);
+  background-size: 100%;
 }
 
 #category .product-info li a {
